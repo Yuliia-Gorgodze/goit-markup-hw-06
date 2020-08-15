@@ -69,12 +69,53 @@
             <button data-modal-open class="hero-button" href="">Заказать услугу</button> 
             <div data-modal class="backdrop is-hidden">
               <div class="modal">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus laudantium facere sunt accusantium
-                  debitis voluptatibus deserunt, distinctio, maxime, repellat excepturi. Quas autem sed blanditiis doloremque vel
-                  quia quasi suscipit?</p>
-                <button data-modal-close class="clouse">
-                  закрыть окно
+                <button data-modal-close type="submit" class="clouse-button">
+                  <svg class="clouse" width="30" height="30">
+                    <use href="./img/sprite.svg#clouse" > </use>
+                  </svg>
                 </button>
+                <span class="modal-heading">Оставьте свои данные, мы вам перезвоним</span>
+                <label class="name-text">
+                  <span class="text-form">Имя</span>
+                  <input type="text" class="name" placeholder=" ">
+                  <svg class="modal-svg">
+                    <use href="./img/sprite.svg#person" width="18" height="18"></use>
+                  </svg>
+                </label>
+                  
+                  
+                <label class="tel-text">
+                  <span class="text-form">Телефон</span>
+                  <input type="text" class="tel" placeholder=" ">
+                  <svg class="modal-svg">
+                    <use href="./img/sprite.svg#phone" width="18" height="18"></use>
+                  </svg>
+                </label>
+                  
+              
+                <label class="mail-text">
+                  <span class="text-form">Почта</span>
+                  <input type="email" class="email" placeholder=" ">
+                  <svg class="modal-svg">
+                    <use href="./img/sprite.svg#email-black" width="18" height="18"></use>
+                  </svg>
+                </label>
+                 
+                
+                <label class="comment">
+                  <span class="comment-text">Комментарий</span>
+                 <textarea name="comment" rows="5" cols="45" placeholder="Оставьте комментарий" class="comment-block"></textarea>
+                </label>
+                
+                <label class="consent-block">
+                  
+                  <input name="consent" type="checkbox" value="reading" class="checkbox" >
+                 <span class="check-icon"></span>
+                  Соглашаюсь с рассылой и принимаю 
+                  <a href=" " class="consent">Условия договора</a>
+              </label>
+                
+                <button  class="button-submit" href="">Отправить</button>
               </div>
             </div>
           </div>
@@ -416,7 +457,18 @@
       </ul>
       </div>
       <div class="footer-sign">
-        <span> подпишитесь на рассылку</span>
+        <span class="sign-text"> подпишитесь на рассылку</span>
+        <div >
+        <label >
+          <input type="email" name="email" placeholder="Email" class="sign">
+        </label>
+       <div class="email-container">
+        <button  class="footer-button" href="">Подписаться</button>
+        <svg class="icon-send" width="24" height="24">
+          <use href="./img/sprite.svg#icon-send"></use>
+        </svg>
+        </div>
+        </div>
       </div>
       </div>
     </footer>
